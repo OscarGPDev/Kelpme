@@ -1,14 +1,14 @@
 <script>
-import SidebarLink from './SidebarLink'
-import { collapsed, toggleSidebar, sidebarWidth } from './state'
+import SidebarLink from "./SidebarLink";
+import { collapsed, toggleSidebar, sidebarWidth } from "./state";
 
 export default {
   props: {},
   components: { SidebarLink },
   setup() {
-    return { collapsed, toggleSidebar, sidebarWidth }
-  }
-}
+    return { collapsed, toggleSidebar, sidebarWidth };
+  },
+};
 </script>
 
 <template>
@@ -22,7 +22,9 @@ export default {
     </h1>
 
     <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
-    <SidebarLink to="/organizaciones" icon="fas fa-columns">Organizaciones</SidebarLink>
+    <SidebarLink to="/organizaciones" icon="fas fa-columns"
+      >Organizaciones</SidebarLink
+    >
     <SidebarLink to="/impacto" icon="fas fa-chart-bar">Impacto</SidebarLink>
     <SidebarLink to="/usos" icon="fas fa-users">Usos</SidebarLink>
     <span
