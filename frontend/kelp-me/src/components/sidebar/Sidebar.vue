@@ -13,6 +13,7 @@ export default {
     <span class="collapse-icon">
         @click="toggleSidebar"
     </span>
+    <i class="fas fa-angle-double-left"></i>
 </template>
 
 <style>
