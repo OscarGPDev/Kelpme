@@ -1,12 +1,11 @@
 const {PrismaClient} = require('@prisma/client');
 
 
-const prisma = new PrismaClient()
-
-
+const prisma = new PrismaClient();
 const getOrganizations = async (req, res) => {
     const getOrganizations = async () => {
-        const organizations = await prisma.Organization.findMany({
+
+        const organizations = await prisma.organizacion.findMany({
             where: {
                 aprobado: true,
             }
