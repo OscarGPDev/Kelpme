@@ -1,5 +1,14 @@
 <template>
   <div>
-    <h1>This is Impacto page</h1>
+    hoaaaa
   </div>
 </template>
+
+<script>
+
+</script>
+
+<style>
+
+</style>
+
