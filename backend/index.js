@@ -9,6 +9,7 @@ dotenv.config();
 app.get('/ObtenerOrganizaciones', getOrganizations);
 app.get('/Noticias', getNews);
 app.post('/Noticias', addNews);
+app.post('/AgregarOrganizacion', getOrganizations);
 
 app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${process.env.PORT}`);
