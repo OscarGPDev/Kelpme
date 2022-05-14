@@ -1,5 +1,6 @@
 const {PrismaClient} = require('@prisma/client');
-
+const {prismaQueryHandler} = require('../functions/errorHandler');
+const {uploadToAzure} = require("../functions/uploadToAzure");
 
 const prisma = new PrismaClient();
 const getOrganizations = async (req, res) => {
@@ -14,39 +15,29 @@ const getOrganizations = async (req, res) => {
     };
 
 
-    await getOrganizations()
-        .catch((e) => {
-            res.status(500).send('Fallo al conectarse a la bd');
-        })
-        .finally(async () => {
-            await prisma.$disconnect()
-        });
+    await prismaQueryHandler(getOrganizations, prisma);
 };
 const addOrganization = async (req, res) => {
+    res.json(req.body);
+    const {nombre, descripcion, direccion, imagen} = req.body
     const addOrganization = async () => {
-
+        const url = await uploadToAzure(imagen);
         await prisma.organizacion.create({
             data: {
-                nombre:'',
-                descripcion:'',
-                direccion:'',
-                imagen:'',
-                aprobado:false
+                nombre,
+                descripcion,
+                direccion,
+                imagen: url,
+                aprobado: false
             },
 
         });
         res.send(JSON.stringify(organizations))
     };
 
-
-    await addOrganization()
-        .catch((e) => {
-            res.status(500).send('Fallo al conectarse a la bd');
-        })
-        .finally(async () => {
-            await prisma.$disconnect()
-        });
+    await prismaQueryHandler(addOrganization, prisma);
 };
 module.exports = {
-    getOrganizations
+    getOrganizations,
+    addOrganization
 }
