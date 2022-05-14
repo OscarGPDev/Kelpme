@@ -1,8 +1,10 @@
 <script>
+import SidebarLink from './SidebarLink'
 import { collapsed, toggleSidebar, sidebarWidth } from "./state"
 
 export default {
    props:{},
+   components: { SidebarLink },
     setup() {
         return { collapsed, toggleSidebar, sidebarWidth }
     },
@@ -20,12 +22,20 @@ export default {
         <span v-else>Kelp Me!</span>
     </h1>
     
-    <span class="collapse-icon" :class="{'rotate-180':collapsed}">
-            @click="toggleSidebar"
+    <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
+    <SidebarLink to="/dashboard" icon="fas fa-columns">Dashboard</SidebarLink>
+    <SidebarLink to="/analytics" icon="fas fa-chart-bar">Analytics</SidebarLink>
+    <SidebarLink to="/friends" icon="fas fa-users">Friends</SidebarLink>
+    <SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink>
+
+    <span
+      class="collapse-icon"
+      :class="{ 'rotate-180': collapsed }"
+      @click="toggleSidebar"
+    >
+      <i class="fas fa-angle-double-left" />
     </span>
-    <i class="fas fa-angle-double-left"></i>
-    
-    </div>
+  </div>
 </template>
 
 <style>
@@ -55,6 +65,10 @@ export default {
         flex-direction: column; 
     }
 
+    .sidebar h1 {
+        height: 2.5em;
+    }
+
     .collapse-icon {
         position: absolute;
         bottom: 0;
@@ -69,7 +83,5 @@ export default {
         transform: rotate(180deg);
         transition: 0.2s linear;
     }
-
-
 
 </style>
