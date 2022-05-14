@@ -1,11 +1,13 @@
 <script>
 import { collapsed, toggleSidebar, sidebarWidth } from "./state"
+
 export default {
    props:{},
     setup() {
-        return {collapsed, toggleSidebar, sidebarWidth}
+        return { collapsed, toggleSidebar, sidebarWidth }
     },
 }
+
 </script>
 
 <template>
@@ -18,11 +20,11 @@ export default {
         <span v-else>Kelp Me!</span>
     </h1>
     
-    
-        <span class="collapse-icon" :class="{'rotate-180':collapsed}">
+    <span class="collapse-icon" :class="{'rotate-180':collapsed}">
             @click="toggleSidebar"
-        </span>
-        <i class="fas fa-angle-double-left"></i>
+    </span>
+    <i class="fas fa-angle-double-left"></i>
+    
     </div>
 </template>
 
@@ -33,7 +35,6 @@ export default {
         --sidebar-item-active: #276749;
     }
 </style>
-
 
 <style scoped>
     .sidebar {
