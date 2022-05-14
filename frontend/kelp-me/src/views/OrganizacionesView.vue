@@ -1,7 +1,14 @@
 <template>
   <div>
-    hoaaaa
+    Organizaciones
   </div>
+ 
+        <router-link to="/formulario"> 
+          ¿Quieres registrar una organización?
+        </router-link> 
+
+
+
 </template>
 
 <script>
