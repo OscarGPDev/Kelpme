@@ -1,6 +1,6 @@
 <script>
-// import { computed } from "vue";
-// import { useRoute } from "vue-router";
+import { computed } from "vue";
+import { useRoute } from "vue-router";
 import { collapsed } from "./state";
 export default {
   props: {
@@ -8,15 +8,9 @@ export default {
     icon: { type: String, required: true },
   },
   setup(props) {
-    console.log(props);
-    console.log(props.to);
-    // const route = useRoute();
-    const isActive=false
-    // const isActive = computed(() => route.path === props.to);
-    // console.log(route,"route")
-    console.log("Funciona");
+    const route = useRoute();
+    const isActive = computed(() => route.path === props.to);
     return { isActive, collapsed };
-    
   },
 };
 </script>
