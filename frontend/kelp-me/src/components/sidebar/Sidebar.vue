@@ -22,9 +22,9 @@ export default {
     </h1>
 
     <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
-    <SidebarLink to="/organizaciones" icon="fas fa-columns">Organizaciones</SidebarLink>
-    <SidebarLink to="/impacto" icon="fas fa-chart-bar">Impacto</SidebarLink>
-    <SidebarLink to="/usos" icon="fas fa-users">Usos</SidebarLink>
+    <SidebarLink to="/organizaciones" icon="fas fa-hand-holding-heart">Organizaciones</SidebarLink>
+    <SidebarLink to="/impacto" icon="fas fa-biohazard">Impacto</SidebarLink>
+    <SidebarLink to="/usos" icon="fas fa-people-carry">Usos</SidebarLink>
     <span
       class="collapse-icon"
       :class="{ 'rotate-180': collapsed }"
