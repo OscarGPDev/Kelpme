@@ -10,7 +10,7 @@ export default {
 
 <template>
     <div class="sidebar" :style="{width: sidebarWidth}"></div>
-    <span class="collapse-icon">
+    <span class="collapse-icon" :class="{'rotate-180':collapsed}">
         @click="toggleSidebar"
     </span>
     <i class="fas fa-angle-double-left"></i>
