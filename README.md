@@ -2,7 +2,7 @@
 
 Es el repositorio de nuestro proyecto para Hack the Ocean. ¡¡Conocelo!!.
 ---
-###Creación de la base de datos para el back
+#### Creación de la base de datos para el back
 Descarga de la imagen de MySQL:
  ``` 
  docker pull mysql/mysql-server:latest
@@ -33,7 +33,7 @@ Actualización de usuario para aceptar conexiones externas:
 update mysql.user set host='%' where user='root';
 ```
 
-###Migración de las entidades en prisma
+#### Migración de las entidades en prisma
 ```
 npx prisma migrate dev --name init
 ```
