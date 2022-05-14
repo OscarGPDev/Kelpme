@@ -2,7 +2,7 @@
 import { defineAsyncComponent } from '@vue/runtime-core'
 export default {
     components:{
-        Inicial: defineAsyncComponent( () => import('@/components/Inicial.vue') )
+        Inicial: defineAsyncComponent( () => import('@/components/home/Inicial.vue') )
     }
 }
 </script>
