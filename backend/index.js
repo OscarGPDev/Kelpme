@@ -4,7 +4,7 @@ const app = express()
 
 
 dotenv.config();
-app.get('/', (req, res) => {
+app.get('/ObtenerOrganizaciones', (req, res) => {
     res.send('Hello World!')
 })
 
