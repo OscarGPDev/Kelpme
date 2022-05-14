@@ -1,10 +1,7 @@
 <script setup>
-import Sidebar from '@/components/sidebar/Sidebar'
 import { RouterLink, RouterView } from 'vue-router'
 
-export default{
-  components: {Sidebar}
-}
+
 </script>
 
 <template>
