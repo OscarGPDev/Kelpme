@@ -4,6 +4,7 @@
   "description": "kelp-me-api",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "run": "node index.js"
   },
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16",
     "prisma": "^3.14.0"
   }
 }
