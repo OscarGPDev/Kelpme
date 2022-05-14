@@ -9,11 +9,21 @@ export default {
 </script>
 
 <template>
-    <div class="sidebar" :style="{width: sidebarWidth}"></div>
-    <span class="collapse-icon" :class="{'rotate-180':collapsed}">
-        @click="toggleSidebar"
-    </span>
-    <i class="fas fa-angle-double-left"></i>
+    <div class="sidebar" :style="{width: sidebarWidth}">
+    <h1>
+        <span v-if="collapsed">
+            <div>K</div>
+            <div>!</div>
+        </span>
+        <span v-else>Kelp Me!</span>
+    </h1>
+    
+    
+        <span class="collapse-icon" :class="{'rotate-180':collapsed}">
+            @click="toggleSidebar"
+        </span>
+        <i class="fas fa-angle-double-left"></i>
+    </div>
 </template>
 
 <style>
