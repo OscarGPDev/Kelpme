@@ -17,6 +17,11 @@ const routes = [
     name: "Impacto",
     component: () => import("../views/Impacto.vue"),
   },
+  {
+    path: "/usos",
+    name: "Usos",
+    component: () => import("../views/Usos.vue"),
+  },
 ];
 
 const router = createRouter({

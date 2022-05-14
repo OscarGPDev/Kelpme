@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1>This is Impacto page</h1>
+    <h1>This is Usos page</h1>
   </div>
 </template>
