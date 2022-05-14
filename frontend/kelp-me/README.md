@@ -1,4 +1,4 @@
-# vue3-sidebar
+# Kelp Me! Sidebar
 
 ## Project setup
 ```

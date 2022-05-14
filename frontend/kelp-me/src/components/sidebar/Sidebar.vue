@@ -15,18 +15,16 @@ export default {
   <div class="sidebar" :style="{ width: sidebarWidth }">
     <h1>
       <span v-if="collapsed">
-        <div>V</div>
-        <div>S</div>
+        <div>K</div>
+        <div>!</div>
       </span>
-      <span v-else>Vue Sidebar</span>
+      <span v-else>Kelp Me!</span>
     </h1>
 
     <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
-    <SidebarLink to="/dashboard" icon="fas fa-columns">Dashboard</SidebarLink>
-    <SidebarLink to="/analytics" icon="fas fa-chart-bar">Analytics</SidebarLink>
-    <SidebarLink to="/friends" icon="fas fa-users">Friends</SidebarLink>
-    <SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink>
-
+    <SidebarLink to="/organizaciones" icon="fas fa-columns">Organizaciones</SidebarLink>
+    <SidebarLink to="/impacto" icon="fas fa-chart-bar">Impacto</SidebarLink>
+    <SidebarLink to="/usos" icon="fas fa-users">Usos</SidebarLink>
     <span
       class="collapse-icon"
       :class="{ 'rotate-180': collapsed }"
@@ -39,9 +37,9 @@ export default {
 
 <style>
 :root {
-  --sidebar-bg-color: #2f855a;
-  --sidebar-item-hover: #38a169;
-  --sidebar-item-active: #276749;
+  --sidebar-bg-color: #2f6685;
+  --sidebar-item-hover: #385da1;
+  --sidebar-item-active: #273b67;
 }
 </style>
 
