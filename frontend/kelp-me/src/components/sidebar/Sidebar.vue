@@ -1,14 +1,18 @@
 <script>
+import { collapsed, toggleSidebar, sidebarWidth } from "./state"
 export default {
    props:{},
     setup() {
-        
+        return {collapsed, toggleSidebar, sidebarWidth}
     },
 }
 </script>
 
 <template>
-    <div class="sidebar"></div>
+    <div class="sidebar" :style="{width: sidebarWidth}"></div>
+    <span class="collapse-icon">
+        @click="toggleSidebar"
+    </span>
 </template>
 
 <style>
