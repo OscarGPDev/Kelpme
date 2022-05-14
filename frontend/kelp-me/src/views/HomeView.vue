@@ -1,9 +1,17 @@
-<script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+<template>
+    <Inicial/>
+    <Noticia/>
+</template>
+
+<script>
+export default {
+    components:{
+        Inicial: defineAsyncComponent ( () => import('../components/Inicial.vue')),
+        Noticia: defineAsyncComponent ( () => import('../components/Noticia.vue')),
+    }
+}
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style>
+
+</style>
