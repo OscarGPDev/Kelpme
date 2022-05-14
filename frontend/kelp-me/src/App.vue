@@ -5,7 +5,6 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <Sidebar />
   <div>
     <router-view />
   </div>
