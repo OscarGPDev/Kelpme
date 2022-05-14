@@ -26,10 +26,10 @@ export default {
     <SidebarLink to="/impacto" icon="fas fa-biohazard">Impacto</SidebarLink>
     <SidebarLink to="/usos" icon="fas fa-people-carry">Usos</SidebarLink>
 
-    <span class="collapse-icon" :class="{'rotate-180':collapsed}">
-            @click="toggleSidebar"
+    <span class="collapse-icon" :class="{'rotate-180':collapsed}"  @click="toggleSidebar">
+      <i class="fas fa-angle-double-left"></i>
     </span>
-    <i class="fas fa-angle-double-left"></i>
+    
    
     </div>
 </template>
