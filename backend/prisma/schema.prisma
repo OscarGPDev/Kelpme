@@ -10,17 +10,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 model Organizacion {
-    id Int      @id @default(autoincrement())
-    nombre String
-    descripcion String
-    direccion String
-    imagen String
-    aprobado Boolean
+    id              Int      @id @default(autoincrement())
+    nombre          String
+    descripcion     String
+    direccion       String
+    imagen          String
+    aprobado        Boolean
 }
 model Noticia {
-    id Int      @id @default(autoincrement())
-    titulo String
-    descripcion String
-    url String
-    imagen String
+    id              Int      @id @default(autoincrement())
+    titulo          String
+    descripcion     String
+    url             String
+    imagen          String
+    fecha           DateTime @default(now())
 }
