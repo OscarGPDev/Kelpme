@@ -19,13 +19,19 @@ export default({
 <template>
     <router-link :to="to" class="link" :class="{ active: isActive }">
     <i class="icon" :class="icon" />
+    <transition name="fade">
     <span v-if="!collapsed">
         <slot />
     </span>
+    </transition>
     </router-link>
 </template>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s;
+}
 .link {
   display: flex;
   align-items: center;
