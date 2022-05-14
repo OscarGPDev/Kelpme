@@ -2,7 +2,7 @@
 <script>
 import Sidebar from '@/components/sidebar/SidebarComponent'
 import { sidebarWidth } from './components/sidebar/state';
-// import { RouterLink, RouterView } from 'vue-router'
+//import { RouterLink, RouterView } from 'vue-router'
 
 export default{
   components: { Sidebar },
