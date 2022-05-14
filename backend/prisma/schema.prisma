@@ -15,6 +15,7 @@ model Organizacion {
     descripcion String
     direccion String
     imagen String
+    aprobado Boolean
 }
 model Noticia {
     id Int      @id @default(autoincrement())
