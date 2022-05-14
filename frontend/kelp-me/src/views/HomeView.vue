@@ -1,9 +1,14 @@
-<script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+<script>
+import { defineAsyncComponent } from '@vue/runtime-core'
+export default {
+    components:{
+        Inicial: defineAsyncComponent( () => import('@/components/Inicial.vue') )
+    }
+}
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+
+    <Inicial />
+
 </template>
