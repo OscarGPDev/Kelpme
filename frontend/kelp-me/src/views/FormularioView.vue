@@ -4,34 +4,31 @@
          <p> Formulario para registrar una organización</p>
         </div>
     </div>
+<form action="" @submit.prevent="pedido" v-on:submit.prevent="procesar();" name="form" id="form">
   <div class="formulario-container">
     <div class="form-left">
-     <form action="">
          <p>
-          Name: <input type="text" name="nombre" placeholder="Pepsi" class="form-control">
+          Name: <input v-model="variables.nombre" type="text" name="nombre" placeholder="Pepsi" class="form-control">
         </p>
         <p>
-          Dirección: <input type="text" name="direccion" placeholder="Galeana 120 col. El Salto GDL, Jalisco" class="form-control">
+          Dirección: <input v-model="variables.direccion" type="text" name="direccion" placeholder="Galeana 120 col. El Salto GDL, Jalisco" class="form-control">
         </p>
         <p>
-          Phone: <input type="text" name="telefono" placeholder="624 147 4078" class="form-control">
+          Phone: <input v-model="variables.phone" type="text" name="telefono" placeholder="624 147 4078" class="form-control">
         </p>
         <p>
-          E-mail: <input type="text" name="correo" placeholder="pepsiCorreoReal@gmail.com" class="form-control">
+          E-mail: <input v-model="variables.email" type="text" name="correo" placeholder="pepsiCorreoReal@gmail.com" class="form-control">
         </p>
-        
-     </form>
-</div>
+    </div>
     <div class="form-right">
         <p>
-          Descripción: <textarea name="comentarios" id="comentarios" cols="60" rows="6" placeholder="Se encarga de usar el zargaso en la comida" class="form-control"></textarea>
+          Descripción: <textarea v-model="variables.descripcion" name="comentarios" id="comentarios" cols="60" rows="6" placeholder="Se encarga de usar el zargaso en la comida" class="form-control"></textarea>
         </p>
         <p>
           Imagen: <input type="file"  name="avatar" accept="image/png, image/jpeg" class="form-control">
         </p>
     </div>
      </div>
-
         <div class="container-submit-reset">
             <div class="submit">
                 <input type="submit" value="Enviar">
@@ -42,10 +39,27 @@
                 </p>
              </div>  
         </div>
+</form>
 </template>
 
 <script>
 
+export default {
+  data: () => ({
+    variables: {
+      nombre: "",
+      telefono: "",
+      correo: "",
+      descripcion: "",
+    }
+  }),
+  methods: {
+    procesar() {
+      //alert(this.variables.nombre);   
+       
+    }
+  }
+};
 </script>
 
 <style scoped>
