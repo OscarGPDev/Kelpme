@@ -2,7 +2,6 @@
   <div class="tittle">
     Organizaciones
   </div>
-
   <router-link to="/formulario">
     ¿Quieres registrar una organización?
   </router-link>
@@ -41,7 +40,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 .tittle {
   text-align: center;
@@ -50,5 +49,20 @@ export default {
   font-weight: 700;
   color: #1C8388;
 }
+
+a{
+  color: #1C8388;
+  text-decoration: none;
+  transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+  box-shadow: 0px 0px 10px #1C8388;
+  border-radius: 5px;
+}
+a:hover{
+  background-color: #1C8388;
+  color: white;
+  border-radius: 5px;
+  transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+
 </style>
 
