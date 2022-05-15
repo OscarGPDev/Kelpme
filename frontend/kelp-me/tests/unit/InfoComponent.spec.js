@@ -6,6 +6,6 @@ describe('Test para InforComponent', () => {
         const wrapper = mount(InfoComponent)
         console.log(wrapper.html())
 
-        expect(wrapper.html()).toContain('perros')
+        expect(wrapper.html()).toContain('Es una página sin ánimo de lucro que logra juntar organizaciones')
     })
 })
