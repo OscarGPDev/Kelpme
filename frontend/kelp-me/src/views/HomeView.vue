@@ -1,5 +1,6 @@
 <template>
     <Inicial/>
+    <InfoComponent/>
     <div class="row">
       <div class="col-md-6">
         <Noticia :noticias="noticias"/>
@@ -20,6 +21,7 @@ export default {
      Inicial: defineAsyncComponent ( () => import('../components/home/InicialComponent.vue')),
      Noticia: defineAsyncComponent ( () => import('../components/home/NoticiaComponent.vue')),
      VideoHome: defineAsyncComponent ( () => import('../components/home/VideoHome.vue')),
+     InfoComponent: defineAsyncComponent ( () => import('../components/home/InfoComponent.vue')),
      },
   data: () => ({
     noticias: []
