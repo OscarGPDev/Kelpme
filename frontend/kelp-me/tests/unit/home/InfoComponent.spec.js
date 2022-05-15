@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import InfoComponent from './../../src/components/home/InfoComponent.vue';
+import InfoComponent from '../../../src/components/home/InfoComponent.vue';
 
 describe('Test para InforComponent', () => {
     it('Test 1: Pintando h2', () => {

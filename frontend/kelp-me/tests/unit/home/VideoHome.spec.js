@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import VideoHome from './../../src/components/home/VideoHome.vue';
+import VideoHome from '../../../src/components/home/VideoHome.vue';
 
 describe('Test para VideoHome', () => {
     it('Test 1: Pintando h2', () => {
