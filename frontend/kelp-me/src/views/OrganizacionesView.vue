@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tittle">
     Organizaciones
   </div>
  
@@ -17,5 +17,12 @@
 
 <style>
 
+.tittle{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: 700;
+  color:#1C8388;
+}
 </style>
 
