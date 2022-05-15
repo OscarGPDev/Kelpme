@@ -26,8 +26,12 @@ export default {
     }
 
     h1, h2{
+        font-weight: 800;
         color: #fff;
         font-size: 4rem;
+        text-align: left; 
+        color: #fff; 
+        text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
     }
 
     .btn-outline-blue{
