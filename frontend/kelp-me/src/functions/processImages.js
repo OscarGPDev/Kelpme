@@ -7,6 +7,6 @@ const toBase64 = file => new Promise((resolve, reject) => {
 
 
 export const convertImageToB64 = async (imagen) => ({
-    "name": imagen.imagen.name,
-    "file": (await toBase64(imagen.imagen)).split(',')[1],
+    "filename": imagen.name,
+    "file": (await toBase64(imagen)).split(',')[1],
 });

@@ -19,7 +19,7 @@ async function uploadToAzure({file, filename}) {
     const blobName = `${uuidv1()}-${filename}`;
     // Get a block blob client
     const blockBlobClient = containerClient.getBlockBlobClient(blobName);
-    console.log("\nUploading to Azure storage as blob:\n\t", blobName);
+    // console.log("\nUploading to Azure storage as blob:\n\t", blobName);
     const imgBuffer = Buffer.from(file, 'base64')
     const s = new Readable()
     s.push(imgBuffer)

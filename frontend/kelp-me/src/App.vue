@@ -3,7 +3,7 @@
 import Sidebar from '@/components/sidebar/SidebarComponent'
 import { sidebarWidth } from './components/sidebar/state';
 //import { RouterLink, RouterView } from 'vue-router'
-
+// import "sweetalert2/src/sweetalert2.scss";
 export default{
   components: { Sidebar },
   setup(){
