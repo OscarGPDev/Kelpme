@@ -2,23 +2,6 @@
   <div class="tittle">
     Organizaciones
   </div>
-  <div class="toform">
-    <router-link to="/formulario"> 
-      ¿Quieres registrar una organización?
-    </router-link> 
-  </div>
-  <div class="container-organizaciones">
-    <div class="organizaciones">
-      <div class="organizaciones-tittle">
-        Organizaciones
-      </div>
-      
-    </div>
-  </div>
- 
-        
-
-
   <router-link to="/formulario">
     ¿Quieres registrar una organización?
   </router-link>
