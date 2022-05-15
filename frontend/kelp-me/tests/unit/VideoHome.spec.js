@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
 import VideoHome from './../../src/components/home/VideoHome.vue';
 
-describe('Test para InforComponent', () => {
+describe('Test para VideoHome', () => {
     it('Test 1: Pintando h2', () => {
         const wrapper = mount(VideoHome)
 
