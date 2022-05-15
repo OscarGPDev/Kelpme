@@ -4,11 +4,11 @@
          <p> Formulario para registrar una organización</p>
         </div>
     </div>
-  <div class="formulario container">
+  <div class="formulario-container">
     <div class="form-left">
      <form action="">
          <p>
-          Name: <input type="text" name="nombre" placeholder="Erika Machain" class="form-control">
+          Name: <input type="text" name="nombre" placeholder="Pepsi" class="form-control">
         </p>
         <p>
           Dirección: <input type="text" name="direccion" placeholder="Galeana 120 col. El Salto GDL, Jalisco" class="form-control">
@@ -27,7 +27,7 @@
           Descripción: <textarea name="comentarios" id="comentarios" cols="47" rows="4" placeholder="Se encarga de usar el zargaso en la comida" class="form-control"></textarea>
         </p>
         <p>
-          Phone: <input type="file"  name="avatar" accept="image/png, image/jpeg" class="form-control">
+          Imagen: <input type="file"  name="avatar" accept="image/png, image/jpeg" class="form-control">
         </p>
     </div>
      </div>
@@ -49,15 +49,18 @@
   font-weight: 700;
   color:#0E46C6 ;
 }
-.form {
-    margin: 20px;
-    padding: 20px;
+.formulario-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 .form-left{
+    margin: 20px;
     float: left;
     width: 40%;
 }
 .form-right{
+    margin: 20px;
     float: right;
     width: 50%;
 }
