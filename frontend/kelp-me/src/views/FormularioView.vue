@@ -24,7 +24,7 @@
 </div>
     <div class="form-right">
         <p>
-          Descripción: <textarea name="comentarios" id="comentarios" cols="47" rows="4" placeholder="Se encarga de usar el zargaso en la comida" class="form-control"></textarea>
+          Descripción: <textarea name="comentarios" id="comentarios" cols="60" rows="6" placeholder="Se encarga de usar el zargaso en la comida" class="form-control"></textarea>
         </p>
         <p>
           Imagen: <input type="file"  name="avatar" accept="image/png, image/jpeg" class="form-control">
@@ -32,8 +32,15 @@
     </div>
      </div>
 
-        <div class="submit">
-          <input type="submit" value="Send">
+        <div class="container-submit-reset">
+            <div class="submit">
+                <input type="submit" value="Enviar">
+             </div>
+             <div class="reset">
+                <p>
+                    <input type="reset" value="Borrar información">
+                </p>
+             </div>  
         </div>
 </template>
 
@@ -47,7 +54,7 @@
   font-size: 40px;
   margin-top: 20px;
   font-weight: 700;
-  color:#0E46C6 ;
+  color:#1C8388;
 }
 .formulario-container{
   display: flex;
@@ -57,7 +64,7 @@
 .form-left{
     margin: 20px;
     float: left;
-    width: 40%;
+    width: 50%;
 }
 .form-right{
     margin: 20px;
@@ -65,9 +72,10 @@
     width: 50%;
 }
 p{
-    margin: 0;
+    margin: 10px;
     padding: 0;
-    color:#4C78DC ;
+    color:#1C8388 ;
+    text-align: left;
 }
 
 .submit {
@@ -81,11 +89,40 @@ input[type=submit] {
   cursor: pointer; 
   font-size: 15px;
   font-weight: 600;
-  color:#4C78DC ;;
+  color:#1C8388;
   transition: all 0.5s ease-in-out;
 }
 input[type=submit]:hover {
-  background-color: #4C78DC ;;
+  background-color: #1C8388;
   color: #fff;
+}
+.reset {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type=reset] {
+  cursor: pointer; 
+  font-size: 15px;
+  font-weight: 600;
+  color:#1C8388;
+  transition: all 0.5s ease-in-out;
+}
+input[type=reset]:hover {
+  background-color: #1C8388;
+  color: #fff;
+}
+.container-submit-reset{
+    display: flex;
+     flex-direction: column;
+    margin-top: 30px;
+}
+.submit{
+    align-self:flex-end;
+}
+.reset{
+   align-self:flex-end;
 }
 </style>
