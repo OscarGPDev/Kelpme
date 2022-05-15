@@ -8,25 +8,25 @@
             <div class="col-md-6">
                 <div class="row justify-content-around">
 
-                    <div class="col-5 my-5">
+                    <div class="col-5 my-5 contendor-objetivos">
                         <i class="fa-solid fa-hand-holding-heart"></i>
                         <h3 class="mt-4">Cuidar</h3>
                         <p class="w-75 mx-auto">Cuidar y concientizar de aquellos sitios que son importante para nuestro país</p>
                     </div>
 
-                    <div class="col-5 my-5">
+                    <div class="col-5 my-5 contendor-objetivos">
                         <i class="fa-solid fa-hands-praying"></i>
                         <h3 class="mt-4">Sumar</h3>
                         <p class="w-75 mx-auto">Cada granito de arena es escencial para llegar a nuestro objetivo</p>
                     </div>
                     
-                    <div class="col-5 my-5">
+                    <div class="col-5 my-5 contendor-objetivos">
                         <i class="fa-solid fa-hand-holding-medical"></i>
                         <h3 class="mt-4">Concientizar</h3>
                         <p class="w-75 mx-auto">Exponer el verdadero problema y lograr que más personas tengan información</p>
                     </div>
 
-                    <div class="col-5 my-5">
+                    <div class="col-5 my-5 contendor-objetivos">
                         <i class="fa-solid fa-book-atlas"></i>
                         <h3 class="mt-4">Educar</h3>
                         <p class="w-75 mx-auto">Mostrar las soluciones existentes y viables que existen</p>
@@ -52,5 +52,9 @@ export default {
     .container-fluid{
         background: #16a8af;
         color: white;
+    }
+    .contendor-objetivos{
+        border-left: 2px solid white;
+        border-right: 2px solid white;
     }
 </style>
