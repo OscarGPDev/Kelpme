@@ -1,14 +1,11 @@
 <template>
     <Inicial/>
     <InfoComponent/>
-    <div class="row">
-      <div class="col-md-6">
-        <Noticia :noticias="noticias"/>
-      </div>
-      <div class="col-md-6">
-        <VideoHome/>
-      </div>
-    </div>
+
+      <Noticia :noticias="noticias"/>
+
+      <VideoHome/>
+
 </template>
 
 <script>
@@ -47,7 +44,5 @@ export default {
 </script>
 
 <style scoped>
-  .row{
-    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
-  }
+
 </style>
