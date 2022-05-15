@@ -1,9 +1,10 @@
 <template>
+    <h2 class="mb-5 pt-5 fw-bold fs-1 titulo">Impacto del sargazo</h2>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 container-izquierda">
         <VideoImpacto/>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 container-derecha">
         <AfectacionImpacto/>
       </div>
       <div class="col-md-12">
@@ -27,7 +28,20 @@ export default {
 </script>
 
 <style scoped>
-  .row{
-    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+  .container-derecha{
+
+      background: #16a8af;
+      color: white;
+
+  }
+
+  .container-izquierda{
+
+        background: rgb(245, 245, 245);
+
+  }
+  
+  .titulo{
+    color: #16a8af;
   }
 </style>
