@@ -33,4 +33,5 @@ Creación de build para producción(se requiere un servidor de contenido estáti
 ```
 npm run build
 ```
+![Captura de pantalla de 2022-05-15 17-06-32](https://user-images.githubusercontent.com/23283637/168495978-c26a1eb4-c5e8-4e49-b947-967c2354c3dc.png)
 
