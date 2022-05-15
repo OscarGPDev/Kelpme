@@ -4,7 +4,6 @@ import InfoComponent from './../../src/components/home/InfoComponent.vue';
 describe('Test para InforComponent', () => {
     it('Test 1: Pintando h2', () => {
         const wrapper = mount(InfoComponent)
-        console.log(wrapper.html())
 
         expect(wrapper.html()).toContain('Es una página sin ánimo de lucro que logra juntar organizaciones')
     })
