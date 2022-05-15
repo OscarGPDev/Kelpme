@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const {getOrganizations, addOrganization} = require("./Organizacion/organizacion");
+const {getOrganizations, addOrganization, toggleOrganization} = require("./Organizacion/organizacion");
 const { getNews, addNews } = require("./Noticia/noticia");
 const app = express();
 const bodyParser = require('body-parser')
@@ -21,6 +21,7 @@ app.get('/ObtenerOrganizaciones', getOrganizations);
 app.get('/Noticias', getNews);
 app.post('/Noticias', addNews);
 app.post('/AgregarOrganizacion', addOrganization);
+app.put('/Organizaciones/:id', toggleOrganization);
 
 app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${process.env.PORT}`);

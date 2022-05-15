@@ -42,7 +42,27 @@ const addOrganization = async (req, res) => {
 
     await prismaQueryHandler(addOrganization, prisma);
 };
+
+const toggleOrganization = async (req, res) => {
+    const { id } = req.params;
+    const { aprobado } = res.body;
+    const organizationQuery = async () => {
+        const organization = await prisma.organizacion.update({
+            where: {
+                id
+            },
+            data: {
+                aprobado
+            }
+        });
+        res.send(JSON.stringify(organization))
+    }
+
+    await prismaQueryHandler(organizationQuery, prisma);
+
+}
 module.exports = {
     getOrganizations,
-    addOrganization
+    addOrganization,
+    toggleOrganization
 }
