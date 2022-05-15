@@ -49,15 +49,13 @@ export default {
   font-weight: 700;
   color: #1C8388;
 }
-.toform{
-  width: 90%;
-  text-align: end;
 
-}
 a{
   color: #1C8388;
   text-decoration: none;
   transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+  box-shadow: 0px 0px 10px #1C8388;
+  border-radius: 5px;
 }
 a:hover{
   background-color: #1C8388;
@@ -65,16 +63,6 @@ a:hover{
   border-radius: 5px;
   transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
 }
-.container-organizaciones{
-  margin-left: 25px;
-  display: flex;
-  border: 2.5px solid #1C8388;
-  width: 90%;
-}
-.organizaciones{
- margin: 15px;
- flex-direction: column;
 
-}
 </style>
 
