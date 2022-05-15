@@ -2015,10 +2015,10 @@
   "resolved" "https://registry.npmjs.org/@vue/shared/-/shared-3.2.33.tgz"
   "version" "3.2.33"
 
-"@vue/test-utils@^2.0.0-rc.21":
-  "integrity" "sha512-wIJR4e/jISBKVKfiod3DV32BlDsoD744WVCuCaGtaSKvhvTL9gI5vl2AYSy00V51YaM8dCOFi3zcpCON8G1WqA=="
-  "resolved" "https://registry.npmjs.org/@vue/test-utils/-/test-utils-2.0.0-rc.21.tgz"
-  "version" "2.0.0-rc.21"
+"@vue/test-utils@^2.0.0-rc.18":
+  "integrity" "sha512-aifolXjVdsogjaLmDoZ0FU8vN+R67aWmg9OuVeED4w5Ij5GFQLrlhM19uhWe/r5xXUL4fXMk3pX5wW6FJP1NcQ=="
+  "resolved" "https://registry.npmjs.org/@vue/test-utils/-/test-utils-2.0.0-rc.18.tgz"
+  "version" "2.0.0-rc.18"
 
 "@vue/vue-loader-v15@npm:vue-loader@^15.9.7":
   "integrity" "sha512-GwSkxPrihfLR69/dSV3+5CdMQ0D+jXg8Ma1S4nQXKJAznYFX14vHdc/NetQc34Dw+rBbIJyP7JOuVb9Fhprvog=="
