@@ -8,20 +8,20 @@
     <div class="formulario-container">
       <div class="form-left">
         <p>
-          Name: <input v-model="variables.nombre" class="form-control" name="nombre" placeholder="Pepsi" type="text">
+          Name: <input v-model="variables.nombre" class="form-control" name="nombre" placeholder="Pepsi" type="text" required>
         </p>
         <p>
           Dirección: <input v-model="variables.direccion" class="form-control" name="direccion"
-                            placeholder="Galeana 120 col. El Salto GDL, Jalisco" type="text">
+                            placeholder="Galeana 120 col. El Salto GDL, Jalisco" type="text" required>
         </p>
         <p>
           Phone: <input v-model="variables.telefono" class="form-control" name="telefono" placeholder="624 147 4078"
-                        type="text">
+                        type="text" required>
         </p>
         <p>
           E-mail: <input v-model="variables.email" class="form-control" name="correo"
                          placeholder="pepsiCorreoReal@gmail.com"
-                         type="text">
+                         type="text" required>
         </p>
       </div>
       <div class="form-right">
@@ -29,7 +29,7 @@
           Descripción: <textarea id="comentarios" v-model="variables.descripcion" class="form-control" cols="60"
                                  name="comentarios"
                                  placeholder="Se encarga de usar el zargaso en la comida"
-                                 rows="6"></textarea>
+                                 rows="6" required></textarea>
         </p>
         <p>
           Imagen: <input id="imagen" accept="image/png, image/jpeg" class="form-control" name="avatar" type="file">
