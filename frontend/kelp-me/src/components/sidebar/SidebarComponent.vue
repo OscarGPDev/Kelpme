@@ -21,10 +21,20 @@ export default {
         <span v-else>Kelp Me!</span>
     </h1>
     
-    <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
-    <SidebarLink to="/organizaciones" icon="fas fa-hand-holding-heart">Organizaciones</SidebarLink>
-    <SidebarLink to="/impacto" icon="fas fa-biohazard">Impacto</SidebarLink>
-    <SidebarLink to="/usos" icon="fas fa-people-carry">Usos</SidebarLink>
+    <div class="menu">
+      <div class="home">
+        <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
+      </div>
+      <div class="organizaciones">
+        <SidebarLink to="/organizaciones" icon="fas fa-hand-holding-heart">Organizaciones</SidebarLink>
+      </div>
+      <div class="impacto">
+        <SidebarLink to="/impacto" icon="fas fa-biohazard">Impacto</SidebarLink>
+      </div>
+      <div class="usos">
+        <SidebarLink to="/usos" icon="fas fa-people-carry">Usos</SidebarLink>
+      </div>
+    </div>
 
     <span class="collapse-icon" :class="{'rotate-180':collapsed}"  @click="toggleSidebar">
       <i class="fas fa-angle-double-left"></i>
@@ -41,6 +51,23 @@ export default {
 </style>
 
 <style scoped>
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+.home{
+  margin-top: 1rem;
+}
+.organizaciones{
+  margin-top: 1rem;
+}
+.impacto{
+  margin-top: 1rem;
+}
+.usos{
+  margin-top: 1rem;
+}
 .sidebar {
   color: white;
   background-color: var(--sidebar-bg-color);

@@ -2,9 +2,11 @@
   <div class="tittle">
     Organizaciones
   </div>
-  <router-link to="/formulario">
-    ¿Quieres registrar una organización?
-  </router-link>
+  <div class="quieres">
+    <router-link to="/formulario">
+      ¿Quieres registrar una organización?
+    </router-link>
+  </div>
 <OrganizationComponent v-for="org in this.organizaciones" :name="org.nombre" :key="org.id" :description="org.descripcion" :image="org.imagen" />
 
 </template>
@@ -49,7 +51,13 @@ export default {
   font-weight: 700;
   color: #1C8388;
 }
-
+.quieres{
+  display: flex;
+  width: 90%;
+  margin-top: 15px;
+  flex-direction: row-reverse;
+  
+}
 a{
   color: #1C8388;
   text-decoration: none;
