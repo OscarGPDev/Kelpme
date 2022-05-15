@@ -1,51 +1,15 @@
-# Kelpme
+# Kelp me!
 ---
 Es el repositorio de nuestro proyecto para Hack the Ocean. ¡¡Conocelo!!.
 ---
-#### Creación de la base de datos para el back
-Descarga de la imagen de MySQL:
- ``` 
- docker pull mysql/mysql-server:latest
- ```
+Aquí puedes encontrar dos carpetas con sus respectivos proyectos, **backend** y **frontend**, cada uno tiene sus
+respectivos README con instrucciones para ejecutar su contenido.
 
-Creación del contenedor:
-```
-docker run --name=CONTAINERNAME -p 3306:3306 -d mysql/mysql-server:latest
-```
-
-Obtención de la contraseña del contenedor:
-```
-docker logs CONTAINERNAME
-```
-
-Accediendo al contenedor:
-```
-docker exec -it CONTAINERNAME mysql -uroot -p
-```
-
-Actualizar la contraseña del contenedor:
-```
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
-```
-
-Actualización de usuario para aceptar conexiones externas:
-```
-update mysql.user set host='%' where user='root';
-```
-
-#### Migración de las entidades en prisma
-```
-npx prisma migrate dev --name init
-```
-### Backend
-Nuestro backend consiste en una Rest API en express, para su correcto funcionamiento se necesitan configurar las siguientes variables:
-```
-DATABASE_URL="mysql://user:password@hosy:port/database"
-PORT="3000"
-#Para obtener la cadena de conexion revisar el siguiente link -> https://docs.microsoft.com/es-es/azure/storage/blobs/storage-quickstart-blobs-nodejs?tabs=environment-variable-windows#copy-your-credentials-from-the-azure-portal
-AZURE_STORAGE_CONNECTION_STRING="CADENA DE CONEXION"
-#Nombre del contenedor de azure
-CONTAINER_NAME="kelpme"
-```
-
-[Url de referencia](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/using-prisma-migrate-typescript-postgres)
+Puedes conocer las tareas que decidimos hacer para este proyecto [aquí](https://github.com/users/OscarGPDev/projects/2).
+##Integrantes
+Este equipo estuvo conformado por:
+- [CharlieC57](https://github.com/CharlieC57)
+- [J4viMx](https://github.com/J4viMx)
+- [JorgeLMarquez](https://github.com/JorgeLMarquez)
+- [UlisesOrnelasR](https://github.com/UlisesOrnelasR)
+- [OscarGPDev](https://github.com/OscarGPDev)
