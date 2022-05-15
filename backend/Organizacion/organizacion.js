@@ -25,7 +25,6 @@ const getOrganizations = async (req, res) => {
 This function is used to insert new organizations to the database, but they need to be approved to be retrieved in the api query
 * */
 const addOrganization = async (req, res) => {
-    res.json(req.body);
     const {nombre, descripcion, direccion, imagen} = req.body
     const addOrganization = async () => {
         const url = await uploadToAzure(imagen);
