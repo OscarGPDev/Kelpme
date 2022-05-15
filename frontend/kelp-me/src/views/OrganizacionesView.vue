@@ -22,7 +22,7 @@ export default {
 
   },
   created() {
-    fetch(`${process.env.VUE_APP_KELP_ME_API_URL}/ObtenerOrganizaciones`,{method: "GET",}).then(res => {
+    fetch(`${process.env.VUE_APP_KELP_ME_API_URL}/ObtenerOrganizaciones`,{method: "GET",headers:{ 'Content-Type': 'application/json'}}).then(res => {
       // a non-200 response code
       if (!res.ok) {
         // create error instance with HTTP status text
