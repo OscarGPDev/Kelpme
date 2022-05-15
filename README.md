@@ -1,5 +1,5 @@
 # Kelpme
-
+---
 Es el repositorio de nuestro proyecto para Hack the Ocean. ¡¡Conocelo!!.
 ---
 #### Creación de la base de datos para el back
@@ -36,6 +36,16 @@ update mysql.user set host='%' where user='root';
 #### Migración de las entidades en prisma
 ```
 npx prisma migrate dev --name init
+```
+### Backend
+Nuestro backend consiste en una Rest API en express, para su correcto funcionamiento se necesitan configurar las siguientes variables:
+```
+DATABASE_URL="mysql://user:password@hosy:port/database"
+PORT="3000"
+#Para obtener la cadena de conexion revisar el siguiente link -> https://docs.microsoft.com/es-es/azure/storage/blobs/storage-quickstart-blobs-nodejs?tabs=environment-variable-windows#copy-your-credentials-from-the-azure-portal
+AZURE_STORAGE_CONNECTION_STRING="CADENA DE CONEXION"
+#Nombre del contenedor de azure
+CONTAINER_NAME="kelpme"
 ```
 
 [Url de referencia](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/using-prisma-migrate-typescript-postgres)
