@@ -7,6 +7,14 @@
       ¿Quieres registrar una organización?
     </router-link> 
   </div>
+  <div class="container-organizaciones">
+    <div class="organizaciones">
+      <div class="organizaciones-tittle">
+        Organizaciones
+      </div>
+      
+    </div>
+  </div>
  
         
 
@@ -42,6 +50,17 @@ a:hover{
   color: white;
   border-radius: 5px;
   transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+.container-organizaciones{
+  margin-left: 25px;
+  display: flex;
+  border: 2.5px solid #1C8388;
+  width: 90%;
+}
+.organizaciones{
+ margin: 15px;
+ flex-direction: column;
+
 }
 </style>
 
