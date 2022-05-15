@@ -26,13 +26,13 @@ app.get('/Noticias', getNews);
 app.post('/Noticias', addNews);
 app.post('/AgregarOrganizacion', addOrganization);
 app.put('/Organizaciones/:id', toggleOrganization);
-// https.createServer({
-//     cert: fs.readFileSync('mi_certificado.crt'),
-//     key: fs.readFileSync('mi_certificado.key')
-// },app).listen(process.env.PORT, function(){
-//     console.log('Servidor https correindo en el puerto 443');
-// });
-app.listen(process.env.PORT, () => {
-    console.log(`Example app listening on port ${process.env.PORT}`);
+https.createServer({
+    cert: fs.readFileSync('mi_certificado.crt'),
+    key: fs.readFileSync('mi_certificado.key')
+},app).listen(process.env.PORT, function(){
+    console.log('Servidor https');
 });
+// app.listen(process.env.PORT, () => {
+//     console.log(`Example app listening on port ${process.env.PORT}`);
+// });
 
