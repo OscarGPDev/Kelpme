@@ -23,6 +23,11 @@ const routes = [
     name: "Usos",
     component: () => import("../views/UsosView.vue"),
   },
+  {
+    path: "/formulario",
+    name: "Formulario",
+    component: () => import("../views/FormularioView.vue"),
+  }
 ];
 
 const router = createRouter({

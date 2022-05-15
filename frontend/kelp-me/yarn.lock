@@ -5876,6 +5876,11 @@
     "lodash" "^4.17.21"
     "semver" "^7.3.5"
 
+"vue-form-generator@^2.3.4":
+  "integrity" "sha512-gkGLukX2xyVYASVopRVt/v4ZVFpoH+I1j+yRIkJBOR9++UwZTi8yREWydnKukpp/r90SGX68Yzy4OkQrKZHluQ=="
+  "resolved" "https://registry.npmjs.org/vue-form-generator/-/vue-form-generator-2.3.4.tgz"
+  "version" "2.3.4"
+
 "vue-hot-reload-api@^2.3.0":
   "integrity" "sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog=="
   "resolved" "https://registry.npmjs.org/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz"
