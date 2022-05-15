@@ -22,17 +22,16 @@ const addOrganization = async (req, res) => {
     const {nombre, descripcion, direccion, imagen} = req.body
     const addOrganization = async () => {
         const url = await uploadToAzure(imagen);
-        await prisma.organizacion.create({
+        const organization = await prisma.organizacion.create({
             data: {
                 nombre,
                 descripcion,
                 direccion,
                 imagen: url,
-                aprobado: false
             },
 
         });
-        res.send(JSON.stringify(organizations))
+        res.send(JSON.stringify(organization))
     };
 
     await prismaQueryHandler(addOrganization, prisma);
