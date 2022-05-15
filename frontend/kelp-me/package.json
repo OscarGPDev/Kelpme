@@ -9,6 +9,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@vue/vue3-jest": "^27.0.0",
     "core-js": "^3.8.3",
     "sweetalert2": "^11.4.14",
     "vue": "^3.2.13",
