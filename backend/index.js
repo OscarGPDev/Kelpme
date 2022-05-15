@@ -27,13 +27,13 @@ app.get('/Noticias', getNews);
 app.post('/Noticias', addNews);
 app.post('/AgregarOrganizacion', addOrganization);
 app.put('/Organizaciones/:id', toggleOrganization);
-https.createServer({
-    cert: fs.readFileSync('./my_cert.key'),
-    key: fs.readFileSync('./my_cert.crt')
-},app).listen(process.env.PORT, function(){
-    console.log('Servidor https');
-});
-// app.listen(process.env.PORT, () => {
-//     console.log(`Example app listening on port ${process.env.PORT}`);
+// https.createServer({
+//     cert: fs.readFileSync('./my_cert.key'),
+//     key: fs.readFileSync('./my_cert.crt')
+// },app).listen(process.env.PORT, function(){
+//     console.log('Servidor https');
 // });
+app.listen(process.env.PORT, () => {
+    console.log(`Example app listening on port ${process.env.PORT}`);
+});
 
