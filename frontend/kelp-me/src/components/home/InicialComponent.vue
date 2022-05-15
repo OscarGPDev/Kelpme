@@ -3,7 +3,7 @@
         <h1>Sargazo</h1>
         <h2 class="mb-5">¿Bueno o malo?</h2>
 
-        <button class="btn btn-outline-blue mt-3"> Quiero saber más </button>
+        <a href="#info" class="btn btn-outline-blue mt-3"> Quiero saber más </a>
     </section>
 </template>
 

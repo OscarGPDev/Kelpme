@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid" id="info">
         <div class="row">
             <div class="col-md-6 d-flex align-items-center flex-column">
                 <h2 class="my-5 pt-5 fw-bold fs-1">Kelp Me</h2>

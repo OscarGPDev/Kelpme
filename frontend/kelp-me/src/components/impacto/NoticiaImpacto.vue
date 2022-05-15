@@ -55,7 +55,8 @@
             </div>
         </div>
 
-            <button class="btn btn-ayudar py-3 px-4 my-5">!Quiero Ayudar!</button>
+            <button @click="goToOrganizaciones" class="btn btn-ayudar py-3 px-4 my-5">!Quiero Ayudar!</button>
+
 
     </div>
 
@@ -64,7 +65,11 @@
 
 <script>
 export default {
-
+    methods:{
+        goToOrganizaciones(){
+            this.$router.push({name: 'Organizaciones'})
+        }
+    }
 }
 </script>
 
