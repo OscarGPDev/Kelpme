@@ -28,8 +28,8 @@ app.post('/Noticias', addNews);
 app.post('/AgregarOrganizacion', addOrganization);
 app.put('/Organizaciones/:id', toggleOrganization);
 https.createServer({
-    cert: fs.readFileSync('my_cert.key'),
-    key: fs.readFileSync('my_cert.crt')
+    cert: fs.readFileSync('./my_cert.key'),
+    key: fs.readFileSync('./my_cert.crt')
 },app).listen(process.env.PORT, function(){
     console.log('Servidor https');
 });
