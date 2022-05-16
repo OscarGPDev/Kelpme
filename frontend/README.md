@@ -112,4 +112,9 @@ graph TD;
 
 ![MicrosoftTeams-image (2)](https://user-images.githubusercontent.com/87330021/168501086-49fa0826-de4d-4795-927e-c14fa12a0222.png)
 
+- Vista para registrar una organización
+
+
+![MicrosoftTeams-image (9)](https://user-images.githubusercontent.com/87330021/168501660-ddd03774-a8ea-462c-85bd-88bea0a8bbf3.png)
+
 
