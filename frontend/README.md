@@ -95,7 +95,7 @@ graph TD;
 - Font Awesome -- Font Awesome is a font and icon toolkit based on CSS and Less. As of 2020, Font Awesome was used by 38% of sites that use third-party font scripts, placing Font Awesome in second place after Google Fonts.
 
 
-##Capturas de las vistas del proyecto
+## Capturas de las vistas del proyecto
 
 - Vista home
 
