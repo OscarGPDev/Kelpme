@@ -7,7 +7,9 @@ Esta es la carpeta del backend
 
 Para el backend optamos por una backend en **Express.js** como framework para una **REST API**, para manejar la base de
 datos utilizamos **Prisma** mientras que para la base de datos nos decidimos por utilizar **MySQL** contenerizado sobre
-docker. A continuación indicamos los pasos para configurar el backend.
+docker. Utilizamos Azure para almacenar las imágenes del sistema, ya que reduce el consumo de almacenamiento en el
+servidor de la aplicación, y permite que sea escalable y más económico a largo plazo. A continuación indicamos los pasos
+para configurar el backend.
 
 #### Creación de la base de datos para el back
 
@@ -69,12 +71,9 @@ CONTAINER_NAME="kelpme"
 
 ![Captura de pantalla de 2022-05-15 16-50-17](https://user-images.githubusercontent.com/23283637/168495941-ecc4ab46-ea8b-41bd-97b9-a97891bfa4b1.png)
 
-
 ## Capturas de azure
 
-
 ![MicrosoftTeams-image (4)](https://user-images.githubusercontent.com/87330021/168501460-c86cbe4b-888f-4161-b247-9a11d8521e9f.png)
-
 
 ![MicrosoftTeams-image (5)](https://user-images.githubusercontent.com/87330021/168501465-bfac39c7-f11c-4381-b771-f68d55f47cb0.png)
 

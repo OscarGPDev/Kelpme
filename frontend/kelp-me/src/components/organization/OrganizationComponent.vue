@@ -32,6 +32,10 @@ export default {
 img {
   width: 100%;
   height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  background-color:rgba(153, 153, 153, 0.52);
+
 }
 
 .container-organizaciones{

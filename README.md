@@ -8,6 +8,14 @@ Aquí puedes encontrar dos carpetas con sus respectivos proyectos, **backend** y
 respectivos README con instrucciones para ejecutar su contenido.
 
 Puedes conocer las tareas que decidimos hacer para este proyecto [aquí](https://github.com/users/OscarGPDev/projects/2).
+
+##Oportunidades de mejora
+- Implementación de una página para que un administrador pueda aprobar organizaciones de forma más cómoda.
+- Implementación de una página para administrar organizaciones.
+- Implementación de una página para registrar noticias.
+- Implementación de una página para administrar noticias.
+
+
 ##Integrantes
 Este equipo estuvo conformado por:
 - [CharlieC57](https://github.com/CharlieC57)
