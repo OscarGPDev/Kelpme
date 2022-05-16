@@ -2,6 +2,8 @@
 ---
 Es el repositorio de nuestro proyecto para Hack the Ocean. ¡¡Conocelo!!.
 ---
+### Deploy en https://proud-bay-0cea1ee10.1.azurestaticapps.net/
+
 Aquí puedes encontrar dos carpetas con sus respectivos proyectos, **backend** y **frontend**, cada uno tiene sus
 respectivos README con instrucciones para ejecutar su contenido.
 
